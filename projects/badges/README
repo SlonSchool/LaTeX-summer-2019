@@ -1,0 +1,24 @@
+Скрипт, генерящий беджики для Слона.
+
+Как:
+скрипт badges.py читает список имён из стандартного ввода и пишет LaTeX со всеми беджиками в стандартный вывод. Пример формата ввода в файле под названием file.
+
+Структура:
+.
+├── README
+├── badges.aux
+├── badges.log
+├── badges.pdf
+├── badges.py
+├── badges.tex
+├── file
+└── slon.png
+
+Пример:
+cat file | python3 ./badges.py > badges.tex
+echo | pdflatex badges.tex
+
+Зависимости:
+	- Python3
+	- PDFlatex примерно 3.14159265-2.6-1.40.20
+
